@@ -1,1 +1,1 @@
-This is repository contains configuration files for various programs
+This repository contains configuration files for various programs
