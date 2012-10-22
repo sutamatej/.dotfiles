@@ -17,6 +17,11 @@ filetype plugin on
 set ofu=syntaxcomplete#Complete
 syntax enable
 
+set modeline
+set ls=2
+
+set colorcolumn=80
+
 set cul
 
 set t_Co=256
