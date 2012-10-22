@@ -10,5 +10,6 @@ xterm*faceName:     Monospace:pixelsize=12
 XTerm*termName:     xterm-256color
 
 ! colorscheme
+!#include ".themes/xterm/zenburn-dark"
 #include ".themes/xterm/solarized-light"
 
