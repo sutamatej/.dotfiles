@@ -1,5 +1,4 @@
 set number                          " show line numbers
-set number                          " show line numbers
 
 set ignorecase                      " be case-insensitive!
 set smartcase                       " be smart!
