@@ -35,3 +35,7 @@ colorscheme solarized
 map <F2> :tabe .<CR>
 map <F3> :tabp<CR>
 map <F4> :tabn<CR>
+
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+
