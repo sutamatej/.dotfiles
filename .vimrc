@@ -33,9 +33,10 @@ colorscheme solarized
 "colorscheme zenburn
 
 map <F2> :tabe .<CR>
-map <F3> :tabp<CR>
-map <F4> :tabn<CR>
+map <F11> :tabp<CR>
+map <F12> :tabn<CR>
 
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
-
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
