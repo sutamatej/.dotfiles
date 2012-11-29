@@ -1,4 +1,17 @@
 #!/bin/bash
 
-#cp -R .[a-zA-Z0-9]* ~
+cp -r \
+.bash_profile \
+.bashrc \
+.config/ \
+.fonts/ \
+.themes/ \
+.vim/ \
+.vimrc \
+.xinitrc \
+.Xresources \
+~
+
+fc-cache -vf
+xrdb -merge ~/.Xresources
 
