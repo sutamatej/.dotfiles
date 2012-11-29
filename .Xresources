@@ -6,7 +6,8 @@ Xft.hinting:   true
 Xft.hintstyle: hintslight
 
 ! xterm settings
-xterm*faceName:     Monospace:pixelsize=12
+!Xterm*faceName:     Monospace:pixelsize=12
+Xterm*faceName:     SourceCodePro:pixelsize=13
 XTerm*termName:     xterm-256color
 
 ! colorscheme
