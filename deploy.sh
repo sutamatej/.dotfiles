@@ -5,6 +5,7 @@ cp -r \
 .bashrc \
 .config/ \
 .fonts/ \
+.gitconfig \
 .themes/ \
 .vim/ \
 .vimrc \
