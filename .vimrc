@@ -26,7 +26,7 @@ set cul                             " hightlight the crrent line
 set t_Co=256                        " display nice colors
 
 " solarized settings
-set background=dark
+set background=light
 colorscheme solarized
 
 " zenburn settings
