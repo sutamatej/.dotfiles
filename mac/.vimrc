@@ -9,7 +9,7 @@ set hlsearch                        " highlight the search result
 set expandtab                       " expand tab to spaces
 set smarttab                        " use smart tabbing
 set shiftwidth=4                    " use 4 spaces for tabs
-set softtabstop=4                   " use 4 spaces for indentation
+set tabstop=4                       " use 4 spaces for indentation
 set autoindent                      " use autoindentation
 
 filetype on                         " recognize the filetype
@@ -40,3 +40,6 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+
+autocmd FileType make setlocal noexpandtab  " use tabs for makefiles
+
