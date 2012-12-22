@@ -32,14 +32,15 @@ colorscheme solarized
 " zenburn settings
 "colorscheme zenburn
 
-map <F2> :tabe .<CR>
-map <F11> :tabp<CR>
-map <F12> :tabn<CR>
+nmap <C-t> :tabe .<CR>
+nmap <C-p> :tabp<CR>
+nmap <C-n> :tabn<CR>
+nmap <C-w> :q<CR>
 
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
+nmap <C-k> :wincmd k<CR>
+nmap <C-j> :wincmd j<CR>
+nmap <C-h> :wincmd h<CR>
+nmap <C-l> :wincmd l<CR>
 
 autocmd FileType make setlocal noexpandtab  " use tabs for makefiles
 
