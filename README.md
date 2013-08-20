@@ -13,9 +13,9 @@ $ sh ~/.dotfiles/deploy-ubuntu.sh
 ## Archlinux
 
 ```bash
-# pacman -S git vim xterm awesome
+$ sudo pacman -S git vim xterm awesome
 $ git clone git@github.com:sutamatej/.dotfiles.git
-$ sh ~/.dotfiles/deploy-arclinux.sh
+$ sh ~/.dotfiles/deploy-archlinux.sh
 ```
 
 ## Mac OS X
