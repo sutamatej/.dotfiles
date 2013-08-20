@@ -12,8 +12,8 @@ set shiftwidth=4                    " use 4 spaces for tabs
 set softtabstop=4                   " use 4 spaces for indentation
 set autoindent                      " use autoindentation
 
-filetype on                         " recognize the filetype
-filetype plugin on                  " not sure what this does
+"filetype on                         " recognize the filetype
+filetype plugin indent on           " not sure what this does
 set ofu=syntaxcomplete#Complete     " use syntax completion
 syntax enable                       " enable sytax coloring
 
@@ -40,3 +40,13 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+
+" autocompleting pairs of characters
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
+inoremap < <><Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
+inoremap /* /**/<Esc>hi
+
