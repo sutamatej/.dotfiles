@@ -4,15 +4,19 @@ deployment script.
 
 ## Ubuntu
 
-`$ sudo apt-get install git vim`
-`$ git clone git@github.com:sutamatej/.dotfiles.git`
-`$ sh ~/.dotfiles/deploy-ubuntu.sh`
+```bash
+$ sudo apt-get install git vim
+$ git clone git@github.com:sutamatej/.dotfiles.git
+$ sh ~/.dotfiles/deploy-ubuntu.sh
+```
 
 ## Archlinux
 
-`# pacman -S git vim xterm awesome`
-`$ git clone git@github.com:sutamatej/.dotfiles.git`
-`$ sh ~/.dotfiles/deploy-arclinux.sh`
+```bash
+# pacman -S git vim xterm awesome
+$ git clone git@github.com:sutamatej/.dotfiles.git
+$ sh ~/.dotfiles/deploy-arclinux.sh
+```
 
 ## Mac OS X
 
