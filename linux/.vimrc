@@ -12,8 +12,9 @@ set shiftwidth=4                    " use 4 spaces for tabs
 set softtabstop=4                   " use 4 spaces for indentation
 set autoindent                      " use autoindentation
 
-"filetype on                         " recognize the filetype
-filetype plugin indent on           " not sure what this does
+filetype on                         " recognize the filetype
+filetype plugin on                  " not sure what this does
+filetype indent on
 set ofu=syntaxcomplete#Complete     " use syntax completion
 syntax enable                       " enable sytax coloring
 
@@ -32,14 +33,19 @@ colorscheme solarized
 " zenburn settings
 "colorscheme zenburn
 
-map <F2> :tabe .<CR>
-map <F11> :tabp<CR>
-map <F12> :tabn<CR>
+" tab manipulation
+nnoremap <silent> <F1> :tabnew<CR>
+nnoremap <silent> <F2> :tabe .<CR>
+nnoremap <silent> <F3> :tabp<CR>
+nnoremap <silent> <F4> :tabn<CR>
 
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
+" window manipulation
+nnoremap <silent> <F5> :vnew<CR>
+nnoremap <silent> <F6> :vsplt .<CR>
+nnoremap <silent> <A-Up> :wincmd k<CR>
+nnoremap <silent> <A-Down> :wincmd j<CR>
+nnoremap <silent> <A-Left> :wincmd h<CR>
+nnoremap <silent> <A-Right> :wincmd l<CR>
 
 " autocompleting pairs of characters
 inoremap ( ()<Esc>i
@@ -50,3 +56,5 @@ inoremap ' ''<Esc>i
 inoremap " ""<Esc>i
 inoremap /* /**/<Esc>hi
 
+" autocompletion with Ctrl + Space
+inoremap <Nul> <C-N>
