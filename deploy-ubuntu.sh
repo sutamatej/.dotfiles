@@ -6,5 +6,6 @@ linux/.vim/ \
 linux/.vimrc \
 ~
 
-python linux/solarize.py
+# run to change the terminal colors to solarized colorscheme:
+#python linux/solarize.py
 
