@@ -1,16 +1,16 @@
 #!/bin/bash
 
 cp -r \
-.bash_profile \
-.bashrc \
-.config/ \
-.fonts/ \
-.gitconfig \
-.themes/ \
-.vim/ \
-.vimrc \
-.xinitrc \
-.Xresources \
+linux/.bash_profile \
+linux/.bashrc \
+linux/.config/ \
+linux/.fonts/ \
+linux/.gitconfig \
+linux/.themes/ \
+linux/.vim/ \
+linux/.vimrc \
+linux/.xinitrc \
+linux/.Xresources \
 ~
 
 fc-cache -vf
