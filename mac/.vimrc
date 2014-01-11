@@ -9,15 +9,25 @@ set hlsearch                        " highlight the search result
 set expandtab                       " expand tab to spaces
 set smarttab                        " use smart tabbing
 set shiftwidth=4                    " use 4 spaces for tabs
-set tabstop=4                       " use 4 spaces for indentation
+set softtabstop=4                   " use 4 spaces for indentation
 set autoindent                      " use autoindentation
 
 filetype on                         " recognize the filetype
 filetype plugin on                  " not sure what this does
+filetype indent on
 set ofu=syntaxcomplete#Complete     " use syntax completion
 syntax enable                       " enable sytax coloring
 
 set ls=2                            " always show status line
+set statusline=                     " status line settings
+set statusline +=\[%n]              " buffer number
+set statusline +=\ %<%F            " file name
+set statusline +=\ %y
+set statusline +=\ %{''.(&fenc!=''?&fenc:&enc).''}
+set statusline +=\ %{&ff}
+set statusline +=\ %=\ row:%l/%L\ (%03p%%)
+set statusline +=\ col:%03c
+set statusline +=\ \ %m%r%w\ %P
 
 set colorcolumn=80                  " show 80 char column marker
 
@@ -32,15 +42,28 @@ colorscheme solarized
 " zenburn settings
 "colorscheme zenburn
 
-nmap <C-t> :tabe .<CR>
-nmap <C-p> :tabp<CR>
-nmap <C-n> :tabn<CR>
-nmap <C-w> :q<CR>
+" tab manipulation
+nnoremap <silent> <F1> :tabnew<CR>
+nnoremap <silent> <F2> :tabe .<CR>
+nnoremap <silent> <F3> :tabp<CR>
+nnoremap <silent> <F4> :tabn<CR>
 
-nmap <C-k> :wincmd k<CR>
-nmap <C-j> :wincmd j<CR>
-nmap <C-h> :wincmd h<CR>
-nmap <C-l> :wincmd l<CR>
+" window manipulation
+nnoremap <silent> <F5> :vnew<CR>
+nnoremap <silent> <F6> :vsplt .<CR>
+nnoremap <silent> <A-Up> :wincmd k<CR>
+nnoremap <silent> <A-Down> :wincmd j<CR>
+nnoremap <silent> <A-Left> :wincmd h<CR>
+nnoremap <silent> <A-Right> :wincmd l<CR>
 
-autocmd FileType make setlocal noexpandtab  " use tabs for makefiles
+" autocompleting pairs of characters
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
+inoremap < <><Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
+inoremap /* /**/<Esc>hi
 
+" autocompletion with Ctrl + Space
+inoremap <Nul> <C-N>
